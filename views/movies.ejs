@@ -4,26 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="assets/style.css" type="text/css" rel="stylesheet">
+     <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
-  <body>
+  <body style="background:#272729">
   <div id="movieHeader"><h1>2019 Popular Movies</h1></div>
-    <div class="container movieBackground">
+    <div class="container movieBackground" >
       <ul style="list-style:none; display:flex; flex-wrap:wrap">
-        <% data.forEach(movie=>{%><span class="movie"
+        <% data.forEach(movie=>{%><div class="movie"
           style="flex-direction:row; padding:10px;"
         >
-        <li style="padding:20px; line-height:1.5em;" >
-         <h2><%= movie.title %></h2>
-          <img style="border-radius:0; margin-bottom:20px;"
+        <li style=" display:flex;flex-direction:row;border:2px outset gray;background:white;" >
+
+         <img style="border-radius:0; display:inline;"
             src="http://image.tmdb.org/t/p/w185//<%=movie.poster_path%>"
             alt="poster"
           />
+          <div style="display:block; width:245px;font-size:15px;padding:20px 10px 0 10px;">
+         <h4><%= movie.title %></h4><br/>
+         
           
          
-            <h4>Synopsis:</h4> <%= movie.overview %>
-          </li></span
-        >
+            <div style="font-size:14px;display:block;"><%= movie.overview %></div></div></div>
+          </li>
         %><%}) %>
       </ul>
     </div>

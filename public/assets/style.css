@@ -15,7 +15,7 @@ span {
   color: #fff;
 }
 
-span.movie {
+/* span.movie {
   border: 1px solid gray;
   border-radius: 5px;
   height: 700px;
@@ -23,7 +23,7 @@ span.movie {
   color: #3b3b3b;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   background: white;
-}
+} */
 
 ul {
   justify-content: center;
@@ -33,25 +33,25 @@ li {
 }
 
 img {
-  display: block;
-  margin: 0 auto;
-  border-radius: 50%;
-  padding: 15px;
+  display: inline;
+  /* margin: 0 auto; */
+  /* border-radius: 50%;
+  padding: 15px; */
 }
 .container {
   display: flex;
   flex: 1 0 auto;
 }
-.movieBackground {
+/* .movieBackground {
   background: white;
-}
+} */
 
 #movieHeader {
   text-align: center;
-  height: 100px;
+  height: 75px;
   padding: 10px;
   background: black;
-  font-size: 2em;
+  font-size: 1.6em;
   color: white;
   margin-bottom: 50px;
 }
